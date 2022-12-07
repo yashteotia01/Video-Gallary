@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>ViDeO GaLlErY</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .footer{
+    padding-left: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    height: 80px;
+    background: #063247;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    opacity: 10;
+    position: fixed;
+}
+.footer a{
+    color: #fff;
+
+}
+.footer a:hover{
+    color: white;
+    background-color: black;
+}
+    </style>
+
+</head>
+<body>
+<div class="container">
+
+        
+    
+    <h1>ViDeO GaLlErY</h1>
+    <div class="video-list">
+        <video class="active" src="video.mp4" muted></video>
+        <video src="video1.mp4" muted></video>
+        <video src="video2.mp4" muted></video>
+        <video src="video3.mp4" muted></video>
+    </div>
+    <div class="main-video">
+        <video src="video.mp4" muted controls></video>
+    </div>
+
+</div>
+<div class="footer">
+    <h2>Contact Us</h2>
+    <a href="#">Email id: yashteotia888@gmail.com</a><br><br>
+    <a href="#">Mobile No: 8851051891</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+$(document).ready(function(){
+    $('.video-list video').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        let src = $(this).attr('src')
+        $('.main-video video').attr('src',src)
+    });
+});
+</script>
+
+
+</body>
+</html>
